@@ -12,3 +12,7 @@ before_install:
     - go get -v github.com/stretchr/testify/assert
     - go get -v github.com/jonboulle/clockwork
 
+script:
+    - go test -v --coverprofile=cover.out ./...
+    - go get -v github.com/mattn/goveralls
+    - goveralls --coverprofile=cover.out --service=travis-ci
