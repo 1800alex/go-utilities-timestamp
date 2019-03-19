@@ -12,3 +12,29 @@ Package timestamp is a package capable of building timestamp string useful for l
 
 
 
+
+# Examples
+
+From
+Code:
+
+```
+{
+	result := From(time.Now())
+	fmt.Println(result)
+}
+```
+
+
+Now
+Code:
+
+```
+{
+	result := Now()
+	fmt.Println(result)
+}
+```
+
+
+
